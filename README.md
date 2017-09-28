@@ -6,7 +6,7 @@
 
 这是一份前端规范，志于提高开发效率
 
-对于绑定js事件的DOM节点，必须有一个以"j-"为前缀的class
+对于绑定js事件的DOM节点，必须有一个以"J_"为前缀的class
 
 例子：
 
@@ -21,19 +21,19 @@
       color: white;
   }
 </style>
-<a class="u-btn j-remind">查看提示</a>
+<a class="u-btn J_remind">查看提示</a>
 <script>
   $(function() {
-      $('.j-remind').on('click', function() {
+      $('.J_remind').on('click', function() {
           //Your Code...
       })
   })
 </script>
 ```
 
-注意：j-remind不负责任何样式
+注意：J_remind不负责任何样式
 
-加了"j-"前缀后的好处是明显的：开发人员能第一眼就看出该DOM节点是否绑定了事件，也能够迅速找到其对应的事件处理函数
+加了"J_"前缀后的好处是明显的：开发人员能第一眼就看出该DOM节点是否绑定了事件，也能够迅速找到其对应的事件处理函数
 
 
 
@@ -73,7 +73,7 @@
 
 ```javascript
 //命名为$list，而非list
-var $list = $('.m-list')
+var $list = $('.J_list')
 ```
 
 
@@ -92,10 +92,10 @@ var $list = $('.m-list')
 }
 </style>
 <div class="z-correct">
-    我是人
+    zzy是人
 </div>
 <div class="z-error">
-    我是猪
+    zzy是猪
 </div>
 ```
 
@@ -103,9 +103,9 @@ var $list = $('.m-list')
 
 ```javascript
 //添加了一个auth类
-$('.m-control-panel').addClass('auth')
+$('.J_controlPanel').addClass('auth')
 //添加了“已认证”状态
-$('.m-control-panel').addClass('z-auth')
+$('.J_controlPanel').addClass('z-auth')
 ```
 
 
